@@ -1,0 +1,138 @@
+METADATOS DEL PROCESO ETL - KAGGLE SURVEY
+==================================================
+
+Fecha de procesamiento: 2025-09-20 23:45:39
+Archivo original: multipleChoiceResponses.csv
+Registros originales: 23,860
+Registros finales: 23,848
+Columnas originales: 395
+Columnas finales: 138
+
+CAMBIOS REALIZADOS:
+--------------------
+1. Eliminación de registros duplicados
+2. Eliminación de columnas con >80% valores faltantes
+3. Imputación de valores nulos:
+   - Categóricas: 'No especificado'
+   - Numéricas: Mediana
+4. Limpieza de espacios en blanco
+5. Normalización de texto (minúsculas)
+6. Renombrado de columnas Q1-Q50
+7. Creación de columnas derivadas
+
+COLUMNAS RENOMBRADAS:
+--------------------
+Time from Start to Finish (seconds) → Tiempo_Total_Encuesta_Segundos
+Q1 → Edad_Encuestado
+Q1_OTHER_TEXT → Edad_Encuestado_Texto_Libre
+Q2 → Genero
+Q3 → Pais_Residencia
+Q4 → Nivel_Educativo
+Q5 → Area_Estudios_Principal
+Q6 → Situacion_Laboral_Actual
+Q6_OTHER_TEXT → Situacion_Laboral_Texto_Libre
+Q7 → Cargo_Principal_Trabajo
+Q7_OTHER_TEXT → Cargo_Principal_Texto_Libre
+Q8 → Anos_Experiencia_Campo
+Q9 → Rango_Salarial_Anual
+Q10 → Lenguajes_Programacion_Habituales
+Q11_Part_1 → IDE_Jupyter_IPython
+Q11_Part_2 → IDE_RStudio
+Q11_Part_3 → IDE_PyCharm
+Q11_Part_4 → IDE_Visual_Studio_Code
+Q11_Part_5 → IDE_nteract
+Q11_Part_6 → IDE_Atom
+Q11_Part_7 → IDE_MATLAB
+Q11_OTHER_TEXT → IDE_Otros_Texto_Libre
+Q12_MULTIPLE_CHOICE → Herramienta_Analisis_Datos_Principal
+Q12_Part_1_TEXT → Herramienta_Estadistica_Basica_Texto
+Q12_Part_2_TEXT → Herramienta_Estadistica_Avanzada_Texto
+Q12_Part_3_TEXT → Herramienta_BI_Texto
+Q12_Part_4_TEXT → Herramienta_Desarrollo_Local_Texto
+Q12_Part_5_TEXT → Herramienta_Cloud_APIs_Texto
+Q12_OTHER_TEXT → Herramienta_Analisis_Otros_Texto
+Q13_Part_1 → Notebook_Kaggle_Kernels
+Q13_Part_2 → Notebook_Google_Colab
+Q13_Part_3 → Notebook_Azure_Notebook
+Q13_Part_4 → Notebook_Domino_Datalab
+Q13_Part_5 → Notebook_Google_Cloud_Datalab
+Q13_Part_6 → Notebook_Paperspace
+Q13_Part_7 → Notebook_Floydhub
+Q13_Part_8 → Notebook_Crestle
+Q13_Part_9 → Notebook_JupyterHub_Binder
+Q13_OTHER_TEXT → Notebook_Otros_Texto_Libre
+Q14_Part_1 → Cloud_Google_Cloud_Platform
+Q14_Part_2 → Cloud_Amazon_Web_Services
+Q14_Part_3 → Cloud_Microsoft_Azure
+Q14_Part_4 → Cloud_IBM_Cloud
+Q14_Part_5 → Cloud_Alibaba_Cloud
+Q14_OTHER_TEXT → Cloud_Otros_Texto_Libre
+Q15_Part_1 → Lenguaje_Python
+Q15_Part_2 → Lenguaje_R
+Q15_Part_3 → Lenguaje_SQL
+Q15_Part_4 → Lenguaje_Bash
+Q15_Part_5 → Lenguaje_Java
+Q15_Part_6 → Lenguaje_Javascript_Typescript
+Q15_Part_7 → Lenguaje_Visual_Basic_VBA
+Q15_OTHER_TEXT → Lenguaje_Otros_Texto_Libre
+Q16_OTHER_TEXT → Lenguaje_Mas_Usado_Texto_Libre
+Q17 → Lenguaje_Recomendado_Data_Science
+Q17_OTHER_TEXT → Lenguaje_Recomendado_Texto_Libre
+Q18_OTHER_TEXT → ML_Otros_Texto_Libre
+Q19_OTHER_TEXT → ML_Framework_Mas_Usado_Texto_Libre
+Q20_OTHER_TEXT → Viz_Otros_Texto_Libre
+Q21_OTHER_TEXT → Viz_Biblioteca_Mas_Usada_Texto_Libre
+Q22 → Porcentaje_Tiempo_Codificacion
+Q22_OTHER_TEXT → Porcentaje_Tiempo_Codificacion_Texto_Libre
+Q23 → Anos_Escribiendo_Codigo_Analisis
+Q24 → Anos_Usando_Machine_Learning
+Q25 → Se_Considera_Data_Scientist
+Q27_Part_1 → ML_Product_Amazon_Transcribe
+Q27_Part_2 → ML_Product_Google_Speech_to_Text
+Q27_Part_3 → ML_Product_Amazon_Rekognition
+Q27_Part_4 → ML_Product_Google_Vision_API
+Q27_Part_5 → ML_Product_Amazon_Comprehend
+Q27_Part_6 → ML_Product_Google_Natural_Language
+Q27_Part_7 → ML_Product_Amazon_Translate
+Q27_Part_8 → ML_Product_Google_Translation_API
+Q27_OTHER_TEXT → ML_Product_Otros_Texto_Libre
+Q28_Part_1 → DB_AWS_RDS
+Q28_Part_2 → DB_AWS_Aurora
+Q28_Part_3 → DB_Google_Cloud_SQL
+Q28_Part_4 → DB_Google_Cloud_Spanner
+Q28_Part_5 → DB_AWS_DynamoDB
+Q28_Part_6 → DB_Google_Cloud_Datastore
+Q28_Part_7 → DB_Google_Cloud_Bigtable
+Q28_Part_8 → DB_AWS_SimpleDB
+Q28_Part_9 → DB_Microsoft_SQL_Server
+Q28_Part_10 → DB_MySQL
+Q28_OTHER_TEXT → DB_Otros_Texto_Libre
+Q29_Part_1 → BigData_AWS_Elastic_MapReduce
+Q29_Part_2 → BigData_AWS_Batch
+Q29_Part_3 → BigData_Google_Cloud_Dataproc
+Q29_Part_4 → BigData_Google_Cloud_Dataflow
+Q29_Part_5 → BigData_Google_Cloud_Dataprep
+Q29_Part_6 → BigData_AWS_Kinesis
+Q29_Part_7 → BigData_Google_Cloud_Pub_Sub
+Q29_Part_8 → BigData_AWS_Athena
+Q29_Part_9 → BigData_AWS_Redshift
+Q29_Part_10 → BigData_Google_BigQuery
+Q29_OTHER_TEXT → BigData_Otros_Texto_Libre
+Q30_Part_1 → Tipo_Datos_Audio
+Q30_Part_2 → Tipo_Datos_Categoricos
+Q30_Part_3 → Tipo_Datos_Geneticos
+Q30_Part_4 → Tipo_Datos_Geoespaciales
+Q30_Part_5 → Tipo_Datos_Imagenes
+Q30_Part_6 → Tipo_Datos_Numericos
+Q30_Part_7 → Tipo_Datos_Sensores
+Q30_Part_8 → Tipo_Datos_Tabulares
+Q30_Part_9 → Tipo_Datos_Texto
+Q30_Part_10 → Tipo_Datos_Series_Temporales
+Q30_OTHER_TEXT → Tipo_Datos_Otros_Texto_Libre
+Q31_OTHER_TEXT → Tipo_Datos_Mas_Usado_Texto_Libre
+Q32 → Fuentes_Datasets_Publicos
+Q37 → Tiempo_Produccion_Modelos
+Q40 → Entrenamiento_Autodidacta
+Q43 → Entrenamiento_Universidad
+Q46 → Plataformas_Educativas_Usadas
+Q48 → Fuentes_Medios_Favoritas
