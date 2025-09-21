@@ -1,0 +1,59 @@
+METADATOS DEL PROCESO ETL - KAGGLE SURVEY 2019
+Enfoque: Ingeniería de Sistemas
+============================================================
+
+Fecha de procesamiento: 2025-09-20 22:12:54
+Archivo original: multipleChoiceResponses.csv
+Registros originales: 19,717
+Registros finales: 23,848
+Columnas originales: 350
+Columnas finales: 138
+
+CAMBIOS REALIZADOS:
+--------------------
+1. Eliminación de registros duplicados
+   • Razón: Evitar duplicación de datos en análisis
+   • Resultado: 0 registros eliminados (no se encontraron duplicados)
+
+2. Eliminación de columnas con >80% valores faltantes
+   • Razón: Columnas con demasiados nulos no aportan información útil
+   • Resultado: 212 columnas eliminadas
+
+3. Imputación de valores nulos
+   • Categóricas: 'No especificado' (mantiene la categoría)
+   • Numéricas: Mediana (robusta a outliers)
+   • Resultado: 0 valores nulos restantes
+
+4. Limpieza de espacios en blanco
+   • Razón: Estandarizar formato de texto
+   • Resultado: Datos normalizados
+
+5. Renombrado de columnas Q1-Q50
+   • Razón: Hacer los nombres más descriptivos y comprensibles
+   • Resultado: 10 columnas principales renombradas
+
+6. Creación de columnas derivadas
+   • Categoria_Experiencia: Agrupa rangos de experiencia
+   • Categoria_Salarial: Agrupa rangos salariales
+   • Razón: Facilitar análisis y visualizaciones
+
+ARCHIVOS GENERADOS:
+--------------------
+• kaggle_survey_cleaned_20250920_221223.csv - Dataset limpio en formato CSV
+• kaggle_survey_cleaned_20250920_221224.xlsx - Dataset limpio en formato Excel con múltiples hojas
+• metadata_etl_20250920_221254.txt - Este archivo de metadatos
+
+CALIDAD DE DATOS:
+--------------------
+• Completitud: 100% (vs 61.3% original)
+• Consistencia: Mejorada mediante normalización
+• Validez: Verificada mediante validación de tipos
+• Precisión: Mantenida mediante preservación de datos originales
+
+APLICACIÓN EN INGENIERÍA DE SISTEMAS:
+-----------------------------------
+• Análisis de tendencias tecnológicas
+• Benchmarking de herramientas de desarrollo
+• Análisis de mercado laboral
+• Planificación de arquitecturas de software
+• Selección de tecnologías apropiadas
